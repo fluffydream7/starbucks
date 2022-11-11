@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입::스타벅스</title>
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/join2.css">
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+    <header id="header" class="cf">
+        <h1>
+            <a href="/index.html"><img src="./images/스타벅스.png" alt="스타벅스"></a>
+        </h1>
+        <nav id="nav">
+            <ul class="depth1">
+                <li><a href="#">ORDER</a></li>
+                <li><a href="#">CARDS</a></li>
+                <li><a href="#">GIFT</a></li>
+            </ul>
+        </nav>
+        <div class="findstore">
+            <a href="#"><i class="fa-solid fa-location-dot"></i>Find a store</a>
+        </div>
+        <div class="membership">
+            <a href="/login.html">Sign in</a>
+            <a href="#">Join now</a>
+        </div>
+    </header>
+
+    <div id="welcome-msg">
+        <div class="text"><a href="#outlayer">Oh what fun 😊</a></div>
+    </div>
+
+    <div id="outlayer">
+        <div id="inlayer">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sequi quae porro quasi, architecto quis reprehenderit veritatis iusto atque sapiente rem aperiam delectus consequatur tempora ducimus veniam, culpa deleniti quia.
+                Optio, officiis! Neque maxime sed consectetur dignissimos dicta vitae incidunt molestias quam ex, similique voluptates eos. Quae temporibus quod ipsa ipsum voluptatibus quo, quos quas! Natus veritatis modi illum non!
+                Inventore, ut recusandae id alias saepe ratione voluptatum ipsa maxime. Omnis necessitatibus expedita minus, aperiam reprehenderit provident perspiciatis culpa quae consectetur molestiae natus corrupti? Facilis magnam illum pariatur reprehenderit quam?
+                Esse debitis sed odio, minus facilis possimus distinctio iste maiores rem magni rerum non hic aliquam quae impedit adipisci pariatur consequatur deserunt magnam ipsam, labore amet molestiae ducimus harum. Dolor?
+                Animi a asperiores voluptatem reprehenderit ducimus maxime quidem inventore nemo tempore facere quisquam placeat ab velit ullam excepturi, obcaecati distinctio amet pariatur dicta? Similique totam nihil nesciunt quo voluptas laboriosam!
+                Mollitia accusamus officia, facere facilis vitae excepturi? Nostrum voluptate nemo cum nihil cupiditate labore quibusdam, autem minus esse tempora eveniet quaerat quisquam quod ut, possimus dolorem libero, similique porro facere?
+                Ex quos, sequi fuga voluptate obcaecati ab error aut temporibus officiis, cum porro, in dolorem sapiente esse nesciunt ipsam eligendi nostrum quis corrupti itaque. Molestiae saepe recusandae temporibus libero ut!
+                Officia, voluptatibus blanditiis. Officiis enim rem accusamus aliquid praesentium ipsum consequatur ipsam veniam nam quaerat atque, iure quae a eveniet repellendus, et molestias? Recusandae expedita voluptates facere earum. Amet, deserunt.
+                Libero qui hic laborum mollitia aliquid repudiandae necessitatibus autem ea quod ratione nisi, vel, numquam iste, nobis ullam quasi velit a officiis corporis quos dolores tempore non! Pariatur, aliquam totam.
+                Dicta alias neque reprehenderit eaque. Natus saepe asperiores itaque excepturi vitae consequatur, voluptatibus exercitationem culpa fugit necessitatibus. Esse, nesciunt laudantium ab quos ducimus sunt incidunt sed, deleniti, eos labore hic.
+            </p>
+            <p>
+                <a href="#">닫기</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="startorder">
+        <a href="#">Start an Order</a>
+    </div>
+    
+    <section id="join2section">
+            <h2>Join Now</h2>
+            <div id="join2box">
+                <div class="stepinfo">
+                    <img src="./images/icon_find_sally.png" alt="">
+                    <p>회원가입 약관동의 및 본인인증단계입니다.</p>
+                </div>
+                <form action="#" method="post">
+                    <div class="idpw">
+                        <label><input type="text" placeholder="아이디"></label>
+                        <label><input type="password" placeholder="비밀번호"></label>
+                        <label><input type="password" placeholder="비밀번호확인"></label>
+                    </div>
+                    <div class="personal">
+                        <div>
+                            <h3>이름<span>(필수)</span></h3>
+                            <input type="text" id="irum">
+                            <input type="radio" id="male" name="gender" checked>
+                            <label for="male">남</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">여</label>
+                        </div>
+                        <div>
+                            <h3>생년월일<span>(필수)</span></h3>
+                            <select name="year" id="year">
+                                <option>선택</option>
+                            </select>
+                            <select name="months" id="months">
+                                <option>선택</option>
+                            </select>
+                            <select name="day" id="day">
+                                <option>선택</option>
+                            </select>
+                            <select name="sm" id="sm">
+                                <option value="p">양</option>
+                                <option value="m">음</option>
+                            </select>
+                            <p>회원가입완료 후 스타벅스카드를 등로하시면 생일 무료음료 쿠폰이 발행됩니다.</p>
+                        </div>
+                        <div>
+                            <h3>휴대폰<span>(필수)</span>
+                                <a href="#none"><img src="./images/icon_mark_point.png" alt="휴대폰 번호 입력 안내"></a>
+                                <div class="hpinfo">
+                                    <h5>휴대폰 번호 입력 안내</h5>
+                                    <ul>
+                                        <li>이벤트 및 주문정보가 담긴 SMS/MMS를 수신하세요.</li>
+                                        <li>주요 공지사항 및 이벤트 당첨 안내 등은 수신 동의 여부에 관계없이 발송됩니다.</li>
+                                    </ul>
+                                    <a href="#" class="text">닫음</a>
+                                    <a href="#" class="symbol">
+                                        <img src="./images/btn_close2.png" alt="">
+                                    </a>
+                                </div>
+                            </h3>
+                            <input type="tel">
+                        </div>
+                        <div>
+                            <h3>
+                                메일<span>(필수)</span>
+                                <a href="#none"><img src="./images/icon_mark_point.png" alt="이메일 입력 안내"></a>
+                                <div class="hpinfo">
+                                    <h5>E-mail 입력 안내</h5>
+                                    <ul>
+                                        <li>스타벅스 코리아의 새로운 서비스, 신상품이나 이벤트 정보 등 최신 정보를 E-mail로 미리 받아 보실 수 있습니다.</li>
+                                        <li>스타벅스 리워드 회원은 쿠폰과 혜택에 대한 내용이 E-mail을 통해 받아 보실 수 있습니다.</li>
+                                        <li>주요 공지사항 및 이벤트 당첨 안내 등은 수신 동의 여부에 관계없이 발송됩니다.</li>
+                                    </ul>
+                                    <a href="#" class="text">닫음</a>
+                                    <a href="#" class="symbol">
+                                        <img src="./images/btn_close2.png" alt="">
+                                    </a>
+                                </div>
+                            </h3>
+                            <input type="email" placeholder="E-mail을 입력하세요">
+                        </div>
+                    </div>
+                    <div class="policy">
+                        <div>
+                            <img src="./images/icon_nick_sally.jpg" alt="">
+                            <p>
+                                주문하신 제품을 찾을실 때, <br>
+                                파트너가 등록하신 닉네임을 불러드립니다.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>닉네임(선택)</h3>
+                            <div class="nick">
+                                <h4>선택적 개인정보 수집동의 및 이용약관</h4>
+                                <div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus accusamus et magnam atque nam nemo cum officiis quasi? Et veritatis nisi, error hic consequatur nobis in nam nostrum nulla!
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quidem magni optio dolor quam aut, rem nesciunt, beatae deleniti inventore, qui quo repudiandae esse ducimus non minima consequatur sequi laboriosam.
+                                    </div>
+                                </div>
+                            </div>
+                            <input id="nickname" type="text" placeholder="한글 6자리 이내로 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="joinbtn">
+                        <p>* 선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.</p>
+                        <button type="submit">가입하기</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+
+    <footer id="footer">
+        <div class="company-info">
+            <ul class="depth1">
+                <li><a href="#">About Us <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Careers <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Social Impact <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">For Business Partners <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Order and Pickup <i class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+        </div>
+        <div class="sns">
+            <a href="#"><span class="blind">Spotify</span><i class="fa-brands fa-spotify"></i></a>
+            <a href="#"><span class="blind">Facebook</span><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><span class="blind">Pinterest</span><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><span class="blind">Instagram</span><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><span class="blind">Youtube</span><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><span class="blind">Twitter</span><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <ul class="bmenu">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">CA Supply Chain Act</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+        </ul>
+        <div class="copyright">
+            &copy; 2021 Starbucks Coffee Company. All rights reserved
+        </div>
+    </footer>
+
+    <script src="./js/join2.js"></script>
+</body>
+</html>

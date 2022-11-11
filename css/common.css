@@ -1,0 +1,213 @@
+@charset "utf-8";
+#header {
+    padding: 0 40px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+    z-index: 1;
+}
+#header h1 {
+    float: left;
+    width: 50px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+#header #nav {
+    float: left;
+}
+#header #nav li {
+    float: left;
+}
+#header #nav li a {
+    display: block;
+    padding: 40px;
+}
+#header #nav li a:hover {
+    background: #00a862;
+    color: #fff;
+}
+#header .findstore {
+    float: right;
+    margin-right: 300px;
+    padding-top: 40px;
+}
+#header .membership {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -15px;
+}
+#header .membership a {
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 6px 16px 8px;
+    display: inline-block;
+}
+#header .membership a:last-child {
+    background: #000;
+    color: #fff;
+    margin-left: 40px;
+}
+
+#welcome-msg {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 94px;
+    left: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.24), 0 4px 4px rgba(0,0,0,0.12);
+}
+#welcome-msg .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: -108px;
+    margin-top: -14px;
+}
+
+#startorder {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+}
+#startorder a {
+    display: block;
+    font-size: 19px;
+    padding: 18px 24px;
+    background: #00a862;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.24), 0 8px 12px rgba(0,0,0,0.14)
+}
+#startorder a:hover {
+    background: rgba(0,128,0,0.3);
+    color: #00754a;
+}
+
+#footer {
+    margin-left: 40%;
+    width: 60%;
+    padding: 48px 40px 100px;
+}
+#footer .company-info .depth1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+} 
+#footer .company-info .depth1 > li {
+    margin-bottom: 20px;
+}
+#footer .company-info .depth1 > li > a {
+    display: block;
+    font-size: 19px;
+    padding: 20px 0;
+    position: relative;  
+}
+#footer .company-info .depth1 > li > a::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+#footer .company-info .depth1 > li > a:hover::before {
+    opacity: 1;
+}
+#footer .company-info .depth1 > li > a i {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+}
+#footer .company-info .depth2 {
+    display: none;
+}
+#footer .company-info .depth2 > li {
+    padding: 5px 0;
+}
+#footer .sns {
+    padding: 32px 0 15px;
+}
+#footer .sns a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 15px;
+    position: relative;
+}
+#footer .sns a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    background: #ddd;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.3s;
+}
+#footer .sns a:hover::before {
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+}
+#footer .bmenu a{
+    font-size: 16px;
+    padding: 8px 0;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+#footer .copyright {
+    font-size: 14px;
+    padding: 16px 0;
+}
+
+#outlayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 99999;
+    display: none;
+}
+#outlayer:target {
+    display: block;
+}
+#inlayer {
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    right: 600px;
+    bottom: 300px;
+    background: #fff;
+    padding: 20px;
+}
+#inlayer p:first-child {
+    overflow-y: scroll;
+    height: 90%;
+}
+#inlayer p:last-child {
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,243 @@
+@charset "utf-8";
+#join2section {
+    margin-left: 40%;
+    width: 60%;
+    padding-top: 94px;
+}
+#join2section h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+#join2box {
+    width: 570px;
+    margin: 50px auto;
+}
+#join2box .stepinfo {
+    text-align: center;
+    padding: 30px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    border-bottom: none;
+}
+#join2box .stepinfo p {
+    margin-top: 20px;
+}
+#join2box .idpw {
+    border: 1px solid #ddd;
+    border-radius: 0 0 3px 3px;
+}
+#join2box .idpw label {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+#join2box .idpw label:last-child {
+    border-bottom: none;
+}
+#join2box ::placeholder {
+    font-size: 14px;
+    color: #ddd;
+}
+#join2box .idpw input {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#join2box .idpw input:focus {
+    background: #f7faf9;
+}
+#join2box .personal {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 30px 0;
+}
+#join2box .personal > div {
+    padding: 20px;
+}
+#join2box h3,
+#join2box h4 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 20px;
+}
+#join2box h3 {
+    position: relative;
+}
+#join2box h3 a {
+    display: inline-block;
+    width: 26px;
+}
+#join2box .hpinfo {
+    width: 526px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+    display: none;
+}
+#join2box h3 > a:focus+.hpinfo {
+    display: block;
+}
+#join2box .hpinfo h5 {
+    color: #444;
+    font-size: 15px;
+    margin: 10px 0;
+}
+#join2box .hpinfo ul {
+    font-size: 13px;
+    color: #666;
+    font-weight: normal;
+}
+#join2box .hpinfo ul li::before {
+    content: '·';
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#join2box .hpinfo .text {
+    display: block;
+    font-size: 12px;
+    background: #222;
+    color: #fff;
+    width: 57px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    margin: 20px auto 0;                 
+}
+#join2box .hpinfo .symbol {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+} 
+#join2box .hpinfo .symbol img {
+    transition: all 0.5s;
+}
+#join2box .hpinfo .symbol:hover img {
+    transform: rotate(180deg)
+}
+#join2box .personal h3 span {
+    color: #006241;
+}
+#join2box .personal #irum {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 250px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+#join2box .personal input[name=gender] {
+    display: none;
+}
+#join2box .personal > div:first-child label {
+    display: inline-block;
+    padding: 15px 20px;
+    border: 1px solid #b0b0b0;
+}
+#join2box .personal > div:first-child #male+label {
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+}
+#join2box .personal > div:first-child #female+label {
+    border-radius: 0 3px 3px 0;
+}
+#join2box .personal input[name=gender]:checked+label {
+    background: #f7faf9;
+}
+#join2box .personal > div+div {
+    border-top: 1px solid #ddd;
+}
+#join2box .personal > div:nth-child(2) select {
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    background: url(../images/icon_arrow_down.png) no-repeat;
+    background-position: 92% center;
+}
+#join2box .personal #year {
+    width: 170px
+}
+#join2box .personal #months,
+#join2box .personal #day {
+    width: 120px;
+}
+#join2box .personal #sm {
+    width: 80px;
+}
+#join2box .personal > div:nth-child(2) p {
+    color: #444;
+    margin-top: 15px;
+    letter-spacing: -1.5px;
+}
+#join2box .personal input[type=tel] {
+    padding: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#join2box .personal input[type=email] {
+    padding: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+}
+#join2box .policy {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#join2box .policy > div:first-child p {
+    color: #666;
+    background: #edebe7;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 1.5; 
+}
+#join2box .policy > div:last-child {
+    padding: 20px;
+}
+#join2box .policy .nick {
+    margin: 30px;
+}
+#join2box .policy .nick > div {
+    padding: 20px;
+    background: #f7faf9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#join2box .policy .nick > div > div {
+    height: 100px;
+    overflow-y: scroll;
+    line-height: 1.2;
+}
+#join2box .policy #nickname {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#join2box  .joinbtn {
+    padding: 30px 20px;
+}
+#join2box  .joinbtn p {
+    color: #666;
+    font-size: 14px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+#join2box  .joinbtn button {
+    width: 100%;
+    background: #006633;
+    color: #fff;
+    font-size: 24px;
+    padding: 18px 0;
+    border-radius: 3px;
+}
